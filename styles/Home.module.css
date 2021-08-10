@@ -119,3 +119,35 @@
     flex-direction: column;
   }
 }
+
+.smasherKeyboard {
+  font-size: 35;
+  color: #39ff14;
+}
+
+.seleniumText {
+  /* color: #3BBFFF; */
+  background: -webkit-linear-gradient(#3BBFFF, #33A5DE);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.linearWipe {
+  text-align: center;
+  
+  background: linear-gradient(to right, #3BBFFF 20%, #FF0 40%, #33A5DE 60%, #33A5DE 80%);
+  background-size: 200% auto;
+  
+  color: #000;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  animation: shine 1s linear infinite;
+  @keyframes shine {
+    to {
+      background-position: 200% center;
+    }
+  }
+}
