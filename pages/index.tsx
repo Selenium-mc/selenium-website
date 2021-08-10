@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import Navbar from '../components/Navbar';
 import { Text, Heading, Button } from '@chakra-ui/react';
 
 export default function Home() {
@@ -14,7 +13,6 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <Navbar />
         <Heading >Welcome to Selenium!</Heading>
         <Text>We are a group of people who enjoy to program, play games, and have fun together!</Text>
       </main>
