@@ -23,11 +23,11 @@ export default function LoginPage() {
 
             <Stack>
                 <InputGroup id="uname">
-                    <InputLeftAddon children={<AtSignIcon />}/>
+                    <InputLeftAddon><AtSignIcon /></InputLeftAddon>
                     <Input placeholder="Username" />
                 </InputGroup>
                 <InputGroup id="pass">
-                    <InputLeftAddon children={<LockIcon />}/>
+                    <InputLeftAddon><LockIcon /></InputLeftAddon>
                     <Input placeholder="Password" type="password" />
                 </InputGroup>
                 <Button onClick={login}>Login</Button>

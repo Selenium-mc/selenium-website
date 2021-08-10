@@ -104,7 +104,7 @@ const CloseIcon = () => (
 
   const MenuItem = ({ children, isLast, to = "/", ...rest }: any) => {
     return (
-      <Link href={to}>
+      <Link href={to} passHref>
         <Text display="block" cursor="pointer" {...rest}>
           {children}
         </Text>
