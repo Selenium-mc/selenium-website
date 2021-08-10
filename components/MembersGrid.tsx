@@ -33,7 +33,7 @@ function MemberCard({name, photoUrl, rank}: any) {
 
     return (
         <Box border="2px" borderColor={color} padding={4} borderRadius={10} w="120px">
-            <Image src={photoUrl} boxSize="80px"/>
+            <Image src={photoUrl} boxSize="80px" alt={name + "'s profile picture"}/>
             <Text textAlign="center" fontWeight="bold">{name}</Text>
             <Text textAlign="center">{rank}</Text>
         </Box>
