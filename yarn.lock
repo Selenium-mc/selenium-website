@@ -924,7 +924,14 @@
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.4.tgz#fcf7205c25dff795ee79af1e30da2c9790808f11"
   integrity sha512-rZ5drC/jWjrArrS8BR6SIr4cWpW09RNTYt9AMZo3Jwwif+iacXAqgVjm0B0Bv/S1jhDXKHqRVNCbACkJ89RAnQ==
 
-"@types/react@17.0.16", "@types/react@^17.0.0":
+"@types/react-typing-effect@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@types/react-typing-effect/-/react-typing-effect-2.0.2.tgz#11fbf831c53c97777d4881e6653ec4bd75106b39"
+  integrity sha512-RZO8XbfC007Z2f/PgFhqC40lCnn0QbkpOJLNM4xX8ZLMtM4fGU4vAfd8A2SjdNg/ncZgqxdk7KIyZma2reObAA==
+  dependencies:
+    "@types/react" "*"
+
+"@types/react@*", "@types/react@17.0.16", "@types/react@^17.0.0":
   version "17.0.16"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.16.tgz#056f40c45645761527baeb7d89d842a6abdf285a"
   integrity sha512-3kCUiOOlQTwUUvjNFkbBTWMTxdTGybz/PfjCw9JmaRGcEDBQh+nGMg7/E9P2rklhJuYVd25IYLNcvqgSPCPksg==

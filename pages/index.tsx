@@ -20,7 +20,7 @@ export default function Home() {
         <ReactTypingEffect
           className={styles.smasherKeyboard}
           text={["Chill out together", "Make open source software", "Play games"]}
-          cursorRenderer={cursor => <h1 className={styles.smasherKeyboard} >{cursor}</h1>}
+          cursorRenderer={cursor => <h1 className={styles.smasherKeyboard}>{cursor}</h1>}
           displayTextRenderer={(text, i) => {
             return (
               <h1>
