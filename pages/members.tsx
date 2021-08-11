@@ -18,6 +18,6 @@ export default function MembersPage() {
           <MembersGrid />
         </main>
       </div>
-    )
+    );
   }
   

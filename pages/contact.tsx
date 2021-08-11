@@ -8,19 +8,18 @@ import { Button } from '@chakra-ui/button';
 import { FormControl, FormLabel } from '@chakra-ui/react';
 
 export default function LoginPage() {
-    return (
-        <div className={styles.container}>
-          <Head>
-            <title>Selenium</title>
-            <meta name="description" content="Website for Selenium" />
-            <link rel="icon" href="/favicon.ico" />
-          </Head>
-    
-          <main className={styles.main}>
-            <Navbar />
-
-            <Text>Can someone please make this page?</Text>
-          </main>
-        </div>
-    );
+  return (
+      <div className={styles.container}>
+        <Head>
+          <title>Selenium</title>
+          <meta name="description" content="Website for Selenium" />
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
+  
+        <main className={styles.main}>
+          <Navbar />
+          <Text>Page is in progress!</Text>
+        </main>
+      </div>
+  );
 }
