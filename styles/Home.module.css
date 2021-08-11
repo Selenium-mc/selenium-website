@@ -128,10 +128,20 @@
 .seleniumText {
   /* color: #3BBFFF; */
   background: -webkit-linear-gradient(#3BBFFF, #33A5DE);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
+@keyframes shine {
+  from {
+    background-position: -50% center;
+  }
+  to {
+    background-position: 150% center;
+  }
+}
 .linearWipe {
   text-align: center;
   
@@ -140,14 +150,11 @@
   
   color: #000;
   background-clip: text;
-  text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   
-  animation: shine 1s linear infinite;
-  @keyframes shine {
-    to {
-      background-position: 200% center;
-    }
-  }
+  animation-name: shine;
+  animation-duration: 1500ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }

@@ -20,22 +20,24 @@ export default function Home() {
         <ReactTypingEffect
           className={styles.smasherKeyboard}
           text={["Chill out together", "Make open source software", "Play games"]}
-          // cursorRenderer={cursor => <h1 className={styles.smasherKeyboard}>{cursor}</h1>}
-          // displayTextRenderer={(text, i) => {
-            // return (
-              // <h1>
-                // {text.split('').map((char, i) => {
-                  // const key = `${i}`;
-                  // return (
-                    // <span
-                      // className={styles.smasherKeyboard}
-                      // key={key}
-                    // >{char}</span>
-                  // );
-                // })}
-              // </h1>
-            // );
-          // }}
+          /*
+          cursorRenderer={(cursor: any) => <h1 className={styles.smasherKeyboard}>{cursor}</h1>}
+          displayTextRenderer={(text: string, i: any) => {
+            return (
+              <h1>
+                {text.split('').map((char, i) => {
+                  const key = `${i}`;
+                  return (
+                    <span
+                      className={styles.smasherKeyboard}
+                      key={key}
+                    >{char}</span>
+                  );
+                })}
+              </h1>
+            );
+          }}
+          */
           eraseDelay={1000}
           typingDelay={1500}
 
