@@ -19,7 +19,7 @@ export default function LoginPage() {
           <main className={styles.main}>
             <Navbar />
 
-            <Heading>We are sorry, but we are not excepting applications at this time :(</Heading>
+            <Heading>We are sorry, but we are not accepting applications at this time :(</Heading>
           </main>
         </div>
     );
