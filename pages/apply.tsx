@@ -8,18 +8,27 @@ import { Button } from '@chakra-ui/button';
 import { FormControl, FormLabel } from '@chakra-ui/react';
 
 export default function LoginPage() {
+  const red = {
+    color: "#E92727",
+  }
+
   return (
-      <div className={styles.container}>
-        <Head>
-          <title>Selenium</title>
-          <meta name="description" content="Website for Selenium" />
-          <link rel="icon" href="/favicon.ico" />
-        </Head>
-  
-        <main className={styles.main}>
-          <Navbar />
-          <Heading>Sorry, but we are currently not accepting applications at the time :(</Heading>
-        </main>
-      </div>
+    <div className={styles.container}>
+      <Head>
+        <title>Selenium</title>
+        <meta name="description" content="Website for Selenium" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
+      <main className={styles.main}>
+        <Navbar />
+
+        <Heading className={styles.title}>
+          <span style={red}>Sorry,</span> but we are currently not accepting applications at the time
+          <br />
+          :(
+        </Heading>
+      </main>
+    </div>
   );
 }

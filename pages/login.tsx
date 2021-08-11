@@ -21,6 +21,8 @@ export default function LoginPage() {
           
           <Heading>Login</Heading>
 
+          <br />
+
           <Stack>
               <InputGroup id="uname">
                   <InputLeftAddon><AtSignIcon /></InputLeftAddon>
