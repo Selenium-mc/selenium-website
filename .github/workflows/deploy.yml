@@ -20,16 +20,12 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: Get the SSH key
-        run: 'echo "$SSH_KEY" > key'
-        shell: bash
-        env:
-          SSH_KEY: ${{secrets.SSH_DEPLOY_KEY}}
-      - name: Add the SSH verification key
+      - name: Run deploy.sh via SSH
         run: |
           mkdir ~/.ssh
+          echo "$SSH_KEY" > ~/.ssh/id_rsa
           echo "$VERIFY_KEY" > ~/.ssh/known_hosts
+          ssh -i ~/.ssh/id_rsa deploy@seleniummc.net '~/deploy.sh'
         env:
           VERIFY_KEY: ${{secrets.SSH_VERIFICATION_KEY}}
-      - name: Run the deploy script on the server.
-        run: ssh -i ./key deploy@seleniummc.net '~/deploy.sh'
+          SSH_KEY: ${{secrets.SSH_DEPLOY_KEY}}
