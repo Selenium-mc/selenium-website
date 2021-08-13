@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: Deploy
 
 # Controls when the workflow will run
 on:
@@ -26,7 +26,9 @@ jobs:
         env:
           SSH_KEY: ${{secrets.SSH_DEPLOY_KEY}}
       - name: Add the SSH verification key
-        run: 'echo "$VERIFY_KEY" > ~/.ssh/known_hosts'
+        run: |
+          mkdir ~/.ssh
+          echo "$VERIFY_KEY" > ~/.ssh/known_hosts
         env:
           VERIFY_KEY: ${{secrets.SSH_VERIFICATION_KEY}}
       - name: Run the deploy script on the server.
