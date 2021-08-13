@@ -24,6 +24,7 @@ jobs:
         run: |
           mkdir ~/.ssh
           echo "$SSH_KEY" > ~/.ssh/id_rsa
+          chmod 400 ~/.ssh/id_rsa
           echo "$VERIFY_KEY" > ~/.ssh/known_hosts
           ssh -i ~/.ssh/id_rsa deploy@seleniummc.net '~/deploy.sh'
         env:
