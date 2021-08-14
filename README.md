@@ -1,4 +1,6 @@
 
-# `Selenium` Hompage
+# Selenium Home page
 
-We are a group of friends who like to make random things togoether, we have no theme, as long as its a cool project we put it here
+Hello :wave:!
+
+We are a group of friends who enjoy making random things together. We have no specific theme, but as long as it's a cool project we'll put it in here.
