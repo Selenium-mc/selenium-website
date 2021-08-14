@@ -1,17 +1,16 @@
 import { Flex, Image, SimpleGrid, Text } from "@chakra-ui/react";
 import React from "react";
 
-
 export default function MemberGrid() {
   return (
     <SimpleGrid columns={5} spacing="10px">
       {/* That feeling when everyone is a banana */}
-      <MemberCard name="Alex"   rank="Founder" photoUrl="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fweknowyourdreams.com%2Fimages%2Fbanana%2Fbanana-02.jpg&f=1&nofb=1" />
-      <MemberCard name="Joey"   rank="Member"  photoUrl="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fweknowyourdreams.com%2Fimages%2Fbanana%2Fbanana-02.jpg&f=1&nofb=1" />
-      <MemberCard name="Eli"    rank="Member"  photoUrl="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fweknowyourdreams.com%2Fimages%2Fbanana%2Fbanana-02.jpg&f=1&nofb=1" />
+      <MemberCard name="Alex"     rank="Founder" photoUrl="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fweknowyourdreams.com%2Fimages%2Fbanana%2Fbanana-02.jpg&f=1&nofb=1" />
+      <MemberCard name="Joey"     rank="Member"  photoUrl="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fweknowyourdreams.com%2Fimages%2Fbanana%2Fbanana-02.jpg&f=1&nofb=1" />
+      <MemberCard name="Eli"      rank="Member"  photoUrl="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fweknowyourdreams.com%2Fimages%2Fbanana%2Fbanana-02.jpg&f=1&nofb=1" />
       <MemberCard name="Bernardo" rank="Member"  photoUrl="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fweknowyourdreams.com%2Fimages%2Fbanana%2Fbanana-02.jpg&f=1&nofb=1" />
       <MemberCard name="Jeremy"   rank="Member"  photoUrl="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fweknowyourdreams.com%2Fimages%2Fbanana%2Fbanana-02.jpg&f=1&nofb=1" />
-      <MemberCard name="Scott"  rank="Member"  photoUrl="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fweknowyourdreams.com%2Fimages%2Fbanana%2Fbanana-02.jpg&f=1&nofb=1" />
+      <MemberCard name="Scott"    rank="Member"  photoUrl="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fweknowyourdreams.com%2Fimages%2Fbanana%2Fbanana-02.jpg&f=1&nofb=1" />
       <MemberCard name="Adeyemi"  rank="Member"  photoUrl="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fweknowyourdreams.com%2Fimages%2Fbanana%2Fbanana-02.jpg&f=1&nofb=1" />
       <MemberCard name="Hannah"   rank="Member"  photoUrl="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fweknowyourdreams.com%2Fimages%2Fbanana%2Fbanana-02.jpg&f=1&nofb=1" />
       <MemberCard name="Oliver"   rank="Rookie"  photoUrl="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fweknowyourdreams.com%2Fimages%2Fbanana%2Fbanana-02.jpg&f=1&nofb=1" />

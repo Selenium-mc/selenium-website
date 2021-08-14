@@ -39,6 +39,6 @@ export default function LoginPage() {
   );
   
   function login() {
-      
+      // TODO: implement login system
   }
 }

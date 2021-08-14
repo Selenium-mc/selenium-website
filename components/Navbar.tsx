@@ -90,10 +90,7 @@ const MenuLinks = ({ isOpen }: any) => {
         <MenuItem to="/contact">Contact</MenuItem>
         <MenuItem to="/login">Login</MenuItem>
         <MenuItem to="/apply" isLast>
-          <Button
-            size="sm"
-            rounded="md"
-          >
+          <Button size="sm" rounded="md">
             Apply to Join!
           </Button>
         </MenuItem>

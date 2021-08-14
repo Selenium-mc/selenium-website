@@ -10,7 +10,7 @@ import { FormControl, FormLabel } from '@chakra-ui/react';
 export default function LoginPage() {
   const highlight = {
     color: "#33A5DE",
-  }
+  };
 
   return (
     <div className={styles.container}>
