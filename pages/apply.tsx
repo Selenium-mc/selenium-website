@@ -8,8 +8,8 @@ import { Button } from '@chakra-ui/button';
 import { FormControl, FormLabel } from '@chakra-ui/react';
 
 export default function LoginPage() {
-  const red = {
-    color: "#E92727",
+  const highlight = {
+    color: "#33A5DE",
   }
 
   return (
@@ -24,7 +24,7 @@ export default function LoginPage() {
         <Navbar />
 
         <Heading className={styles.title}>
-          <span style={red}>Sorry,</span> but we are currently not accepting applications at the time
+          <span style={highlight}>Sorry,</span> but we are currently not accepting applications at this time.
           <br />
           :(
         </Heading>

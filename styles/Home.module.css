@@ -1,3 +1,12 @@
+@keyframes shine {
+  from {
+    background-position: -50% center;
+  }
+  to {
+    background-position: 150% center;
+  }
+}
+
 .container {
   min-height: 100vh;
   padding: 0 0.5rem;
@@ -135,14 +144,6 @@
   -webkit-text-fill-color: transparent;
 }
 
-@keyframes shine {
-  from {
-    background-position: -50% center;
-  }
-  to {
-    background-position: 150% center;
-  }
-}
 .linearWipe {
   text-align: center;
   

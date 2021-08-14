@@ -9,33 +9,33 @@ import { FormControl, FormLabel } from '@chakra-ui/react';
 
 export default function LoginPage() {
   return (
-      <div className={styles.container}>
-        <Head>
-          <title>Selenium</title>
-          <meta name="description" content="Website for Selenium" />
-          <link rel="icon" href="/favicon.ico" />
-        </Head>
-  
-        <main className={styles.main}>
-          <Navbar />
-          
-          <Heading>Login</Heading>
+    <div className={styles.container}>
+      <Head>
+        <title>Selenium</title>
+        <meta name="description" content="Website for Selenium" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
 
-          <br />
+      <main className={styles.main}>
+        <Navbar />
 
-          <Stack>
-              <InputGroup id="uname">
-                  <InputLeftAddon><AtSignIcon /></InputLeftAddon>
-                  <Input placeholder="Username" />
-              </InputGroup>
-              <InputGroup id="pass">
-                  <InputLeftAddon><LockIcon /></InputLeftAddon>
-                  <Input placeholder="Password" type="password" />
-              </InputGroup>
-              <Button onClick={login}>Login</Button>
-          </Stack>
-        </main>
-      </div>
+        <Heading>Login</Heading>
+
+        <br />
+
+        <Stack>
+          <InputGroup id="uname">
+            <InputLeftAddon><AtSignIcon /></InputLeftAddon>
+            <Input placeholder="Username" />
+          </InputGroup>
+          <InputGroup id="pass">
+            <InputLeftAddon><LockIcon /></InputLeftAddon>
+            <Input placeholder="Password" type="password" />
+          </InputGroup>
+          <Button onClick={login}>Login</Button>
+        </Stack>
+      </main>
+    </div>
   );
   
   function login() {
