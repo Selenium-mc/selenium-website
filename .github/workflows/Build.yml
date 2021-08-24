@@ -25,13 +25,5 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
       
-      - uses: actions/setup-node@v2
-        with:
-          node-version: '14'
-          
-      - name: Install dependencies
-        run: yarn install
-
-      # Runs a single command using the runners shell
-      - name: Build the project with Yarn
-        run: yarn run build
+      - name: Builds the docker image
+        runs: docker build . -t selenium-website
